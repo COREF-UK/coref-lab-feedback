@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link rel="icon" href="/favicon.png" />
+	<link rel="icon" href="./favicon.png" />
 	<meta name="viewport" content="width=device-width" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,23 +11,51 @@
 		href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;0,800;1,400&display=swap">
 		<title>COREF Lab App</title>
 	<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="/_app/immutable/start-c9758ca9.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/index-b07e1874.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/singletons-955697af.js">
+		<link href="./_app/immutable/assets/_layout-949f472b.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-a4f5210c.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-b07e1874.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-955697af.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-60620b9c.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-3e829998.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-9d87abe3.js">
 </head>
 
 <body data-sveltekit-preload-data="hover">
 	<div style="display: contents">
-		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "/_app/immutable/start-c9758ca9.js";
+
+
+<div><video autoplay muted loop class="fixed right-0 bottom-0 min-w-full min-h-full object-cover -z-10"><source src="videos/coref-background.mp4" type="video/mp4"></video>
+<main class="h-screen"><img class="block w-2/5 mx-auto pt-10" src="/images/logo.svg" alt="COREF Logo">
+	<div class="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 w-full "><a class="m-10" href="/feedback"><section class="h-full p-10 rounded-2xl backdrop-blur-lg flex flex-col items-center border-2 border-accent"><h1 class="text-white text-center">Provide Feedback</h1>
+				<p class="text-white text-center mt-2 mb-10 opacity-50">Your thoughts and opinions help us see what we&#39;re doing right and where we can improve, so
+					we can make sure the lab is meeting your needs and expectations.
+				</p>
+				<img class="opacity-60 w-2/3" src="/images/feedback.png" alt="Feedback faces"></section></a>
+		<a class="m-10" href="/guides"><section class="h-full p-10 rounded-2xl backdrop-blur-lg flex flex-col items-center border-2 border-accent"><h1 class="text-white text-center">Explore User Guides</h1>
+				<p class="text-white text-center mt-2 mb-10 opacity-50">Need help? Stuck on how to figure something out? Find out how to use the COREF lab space with these helpful guides
+				</p>
+				<img class="fill-accent opacity-70 w-2/3 px-[25%]" src="/images/guide.svg" alt="Guide document"></section></a></div></main></div>
+
+
+		<script type="module" data-sveltekit-hydrate="1pko4qf">
+			import { start } from "./_app/immutable/start-a4f5210c.js";
 
 			start({
 				assets: "",
 				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-				version: "1675960590819"
+				target: document.querySelector('[data-sveltekit-hydrate="1pko4qf"]').parentNode,
+				version: "1675961816562",
+				hydrate: {
+					node_ids: [0, 2],
+					data: [null,null],
+					form: null,
+					error: null
+				}
 			});
-		</script></div>
+		</script>
+	</div>
 </body>
 
 </html>
