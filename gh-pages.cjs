@@ -1,4 +1,7 @@
-import { publish } from 'gh-pages';
+const { publish } = require('gh-pages');
+const { execSync } = require('child_process');
+
+execSync('npm run build');
 
 publish(
  'build', // path to public directory
