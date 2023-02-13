@@ -3,13 +3,35 @@
 	export const load = async ({ url }) => ({ props: { url } });
 </script>
 
-<script>
+<script lang="ts">
+	import { goto } from '$app/navigation';
 	import PageTransition from '../components/PageTransition.svelte';
-	/** @type {string} */
-	export let url;
+	export let url: string;
 	import '../app.css';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		inactivityTime();
+	})
+
+	
+	function inactivityTime() {
+		let time: NodeJS.Timeout;
+
+		window.onload = resetTimer;
+		// DOM Events
+		document.onmousemove = resetTimer;
+		document.onkeydown = resetTimer;
+		document.ontouchstart = resetTimer;
+
+		function resetTimer() {
+			clearTimeout(time);
+			time = setTimeout(() => goto('/'), 60000);
+		}
+	};
 </script>
 
 <PageTransition {url}>
+	<!-- <p>{time}</p> -->
 	<slot />
 </PageTransition>

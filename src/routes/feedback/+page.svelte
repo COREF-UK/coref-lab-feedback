@@ -39,8 +39,8 @@
 		<iframe title="dummyframe" name="dummyframe" id="dummyframe" class="hidden" />
 		<form
 			class="min-h-full h-full flex-grow flex flex-col justify-center relative"
-			action="https://public.herotofu.com/v1/2aedf4a0-a7cf-11ed-a31e-753411848f80"
 			target="dummyframe"
+			action="https://public.herotofu.com/v1/2aedf4a0-a7cf-11ed-a31e-753411848f80"
 			method="post"
 			on:submit={() => (submitted = true)}
 		>
@@ -84,7 +84,19 @@
 						/>
 					{/each}
 					<div class="flex flex-col flex-grow">
-						<label class="font-medium text-lg md:text-2xl mb-4" for="negatives">
+						<p class="font-medium text-lg md:text-2xl mb-4">Where are you?</p>
+						<div class="">
+							<input type="radio" name="where" id="crawley" value="Crawley" required>
+							<label class="text-lg" for="crawley">
+								Crawley
+							</label>
+							<br>
+							<input type="radio" name="where" id="belfast" value="Belfast" required>
+							<label class="text-lg" for="belfast">
+								Belfast
+							</label>
+						</div>
+						<label class="font-medium text-lg md:text-2xl mb-4 mt-8" for="negatives">
 							What could we have improved?
 						</label>
 						<textarea
