@@ -26,7 +26,7 @@
 
 		function resetTimer() {
 			clearTimeout(time);
-			time = setTimeout(() => goto('/'), 60000);
+			time = setTimeout(() => goto('/'), 180000);
 		}
 	};
 </script>
