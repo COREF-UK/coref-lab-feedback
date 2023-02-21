@@ -7,7 +7,8 @@ module.exports = {
 				accent: '#343c49'
 			},
 			fontFamily: {
-				sans: ['Exo', 'sans-serif']
+				sans: ['Exo', 'sans-serif'],
+				serif: ['Source Serif Pro', 'serif']
 			}
 		}
 	},

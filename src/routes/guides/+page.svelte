@@ -12,19 +12,19 @@
 	const guides: Guide[] = [
 		{
 			url: '/guides/displays.md',
-			title: 'How to use the displays in the lab',
+			title: 'Displays in the Lab',
 			description: 'Learn how to mirror your laptop, change inputs and reset displays once finished'
 		},
 		{
-			url: '/guides/sample.md',
-			title: 'Sample markdown',
-			description: 'test markdown file'
+			url: '/guides/vis-suite/vis-suite.md',
+			title: 'Using the Visualisation Suite',
+			description: 'How to use the suite and its associated visualistation tools'
 		},
 		{
-			url: 'https://www.africau.edu/images/default/sample.pdf',
-			title: 'Sample pdf',
-			description: 'You can learn many things from theis document, come take a look!'
-		}
+			url: 'https://code.kx.com/insights/1.2/platform/index.html',
+			title: 'KX Insights Platform',
+			description: 'Learn how to use the KX Insights platform to ingest, query, analyse and visualise data'
+		},
 	];
 
 	let currentGuide: Guide | null = null;
@@ -78,8 +78,10 @@
 	{:else if currentGuide.url.split('.').at(-1) == 'pdf'}
 		<iframe class="flex-grow" title="pdf" src={`${currentGuide.url}#toolbar=0`} frameborder="0" />
 	{:else if currentGuide.url.split('.').at(-1) == 'md'}
-		<section class="p-6 md:p-16 prose lg:prose-lg w-full">
+		<section class="p-6 md:p-16 prose lg:prose-lg max-w-5xl font-sans">
 			<SvelteMarkdown source={markdownContent} />
 		</section>
+	{:else}
+		<iframe class="flex-grow" title="Webpage" src={`${currentGuide.url}`} frameborder="0" />
 	{/if}
 </main>
