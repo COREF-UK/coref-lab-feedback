@@ -33,7 +33,7 @@
 	{#if guide.url?.split('.').at(-1) == 'pdf'}
 		<iframe class="flex-grow" title="pdf" src={`${guide.url}#toolbar=0`} frameborder="0" />
 	{:else if guide.url?.split('.').at(-1) == 'md'}
-		<section class="p-6 md:p-16 prose lg:prose-lg max-w-5xl font-sans">
+		<section class="p-6 md:p-16 prose lg:prose-lg max-w-5xl prose-img:max-h-[50vh]">
 			<SvelteMarkdown source={markdownContent} />
 		</section>
 	{:else}
