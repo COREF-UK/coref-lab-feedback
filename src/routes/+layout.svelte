@@ -32,6 +32,5 @@
 </script>
 
 <PageTransition {url}>
-	<!-- <p>{time}</p> -->
 	<slot />
 </PageTransition>
