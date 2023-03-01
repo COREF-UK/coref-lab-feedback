@@ -10,7 +10,7 @@ export interface Guide {
 // Add url of files for guide (.md and .pdf are supported)
 const guides: Guide[] = [
 	{
-		url: '/guides/displays.md',
+		url: '/guides//displays/displays.md',
 		path: 'displays',
 		title: 'Displays in the Lab',
 		description: 'Learn how to mirror your laptop, change inputs and reset displays once finished'
