@@ -7,7 +7,7 @@ publish(
  'build', // path to public directory
  {
   branch: 'gh-pages',
-  repo: 'https://github.com/josh-thales/coref-lab-feedback.git',
+  repo: 'https://github.com/COREF-UK/coref-lab-feedback.git',
   user: {
    name: 'Josh Pollard',
    email: '124677969+josh-thales@users.noreply.github.com'
