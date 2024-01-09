@@ -42,6 +42,20 @@ const guides: Guide[] = [
 		]
 	},
 	{
+		url: null,
+		path: null,
+		title: 'Operational Technology',
+		description: 'How to program the Operational Technology',
+		children: [
+			{
+				url: '/guides/OT/Smart-tool-User-Guide.pdf',
+				path: 'smart-tool',
+				title: 'Smart Tools',
+				description: 'User guide to program and use the Smart Tool'
+			}
+		]
+	},
+	{
 		url: 'https://code.kx.com/insights/1.2/platform/index.html',
 		path: 'kx-insights',
 		title: 'KX Insights Platform',
