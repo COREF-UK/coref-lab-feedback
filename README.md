@@ -1,38 +1,22 @@
-# create-svelte
+# COREF Lab App
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## How to Add Guide
 
-## Creating a project
+Guides can consist of:
 
-If you're seeing this, you've probably already done this step. Congrats!
+1) Markdown
+2) PDF
+3) Website URL
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Go to `/static/guides` and copy guide content into this folder. The file structure from this point should mirrors the structure in the web app; e.g. a folder will create a new page with guides in that subfolder
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Go to `src/routes/guides/+layout.ts` and find the `guides` variable and add the guide to the corresponding level in the structure (follow the existing guides as an example).
 
-## Developing
+## Build App
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1) Install Node + NPM
+2) Clone repo: `git clone https://github.com/COREF-UK/coref-lab-feedback`
+3) `npm i`
+4) `npm run deploy`
+5) `git push`
 
-```bash 
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
