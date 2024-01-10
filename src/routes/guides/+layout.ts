@@ -56,6 +56,20 @@ const guides: Guide[] = [
 		]
 	},
 	{
+		url: null,
+		path: null,
+		title: '5S in the Lab',
+		description: 'Learn about how we implement the 5S standards in the Lab',
+		children: [
+			{
+				url: '/guides/5S/5S-lab-standards.pdf',
+				path: '5S-standards',
+				title: '5S lab standards',
+				description: 'Explore the 5S standards in the Lab'
+			}
+		]
+	},
+	{
 		url: 'https://code.kx.com/insights/1.2/platform/index.html',
 		path: 'kx-insights',
 		title: 'KX Insights Platform',
