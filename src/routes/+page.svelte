@@ -37,7 +37,7 @@
 		class="fixed bottom-0 left-0 flex flex-row items-center m-4 pt-1 px-8 bg-[#2f3541] border border-slate-300 text-white font-semibold rounded-lg"
 		on:click={() => window.open('https://kits.coref.dev', 'COREF Kits', 'width=1000,height=800')}
 	>
-		<img class="w-12 mt-1 mb-2 grayscale brightness-50" src="https://kits.coref.dev/kits.svg" alt="COREF logo" />
+		<img class="w-12 mt-1 mb-2 saturate-200 brightness-200 grayscale opacity-50" src="https://kits.coref.dev/kits.svg" alt="COREF logo" />
 		<svg
 			class="h-4 translate-y-[-2px] ml-3"
 			xmlns="http://www.w3.org/2000/svg"
