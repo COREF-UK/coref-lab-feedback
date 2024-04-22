@@ -62,8 +62,8 @@ const guides: Guide[] = [
 		description: 'Learn about how we implement the 5S standards in the Lab',
 		children: [
 			{
-				url: '/guides/5S/5S-lab-standards.pdf',
-				path: '5S-standards',
+				url: '/guides/5S/5s-in-the-lab.pdf',
+				path: '5S-lab',
 				title: '5S lab standards',
 				description: 'Explore the 5S standards in the Lab'
 			}
