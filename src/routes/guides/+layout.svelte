@@ -12,10 +12,10 @@
 
 <main class="min-h-screen flex flex-col">
 	<section
-		class="sticky top-0 bg-accent p-6 md:p-16 shadow-2xl flex flex-col md:flex-row justify-between items-center gap-4"
+		class="sticky top-0 bg-accent p-4 md:p-8 shadow-2xl flex flex-col md:flex-row justify-between items-center gap-4"
 	>
-		<h1 class="text-white text-3xl md:text-6xl">Guides: COREF Digital Lab</h1>
-		{#if $page.url.pathname == '/guides'}
+		<h1 class="text-white text-xl md:text-3xl">Guides: COREF Digital Lab</h1>
+		{#if $page.url.pathname == '/guides' || $page.url.pathname == '/guides/5S-lab'}
 			<a href="/">
 				<button
 					class="py-2 px-12 bg-[#454F60] border border-slate-300 text-white font-semibold rounded-lg"
